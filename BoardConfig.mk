@@ -211,3 +211,15 @@ TW_THEME := portrait_hdpi
 BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 RECOVERY_VARIANT := 
+DEVICE_RESOLUTION := 1080x1920
+
+#MultiROM config. MultiROM also uses parts of TWRP config
+TARGET_RECOVERY_IS_MULTIROM := true
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/oneplus/oneplus2/mr_init_devices.c
+MR_DPI := xhdpi
+MR_DPI_FONT := 340
+MR_FSTAB := device/oneplus/oneplus2/twrp.fstab
+MR_KEXEC_MEM_MIN := 0x0
+MR_DEVICE_HOOKS := device/oneplus/oneplus2/mr_hooks.c
+MR_DEVICE_HOOKS_VER := 6
